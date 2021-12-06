@@ -1,0 +1,526 @@
+body{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.m{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+/* navbar */
+
+nav{
+    width: 5%;
+    height: 100vh;
+    background-color: white;
+}
+
+.dashboard  {
+    width: 100%;
+    height: 13vh;
+    /* background-color: wheat; */
+}
+
+.dashboard img{
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    width: 30px;
+}
+
+.nav-icon{
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-icon li{
+    margin-top: 40px;
+}
+
+.nav-icon img{
+    width: 30px;
+}
+
+
+/* food items */
+
+.food-items{
+    width: 65%;
+    height: 100vh;
+    background-color: #BEC3CA;
+}
+
+.header-food{
+    width: 100%;
+    height: 13vh;
+    background-color: white;
+    display: flex;
+}
+
+.container-input{
+    margin-top: 60px;
+}
+
+.inputAdd{
+    display: flex;
+    margin-top: 20px;
+}
+
+.inputAdd h2{
+    margin: 0;
+    margin-top: 9px;
+    width: 70px;
+}
+
+.button-input{
+    display: flex;
+    margin-top: 60px;
+    justify-content: end;
+    width: 100%;
+    height: 60px;
+}
+
+
+.bluebut{
+    width: 130px;
+    height: 40px;
+    background-color: #57CAD5;
+    border-radius: 9px;
+    font-size: 24px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.redbut{
+    width: 130px;
+    height: 40px;
+    background-color: #F24F8A;
+    border-radius: 9px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+    margin-right: 40px;
+
+}
+
+.input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin-top: 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    display: none;
+  }
+
+.input2 {
+    width: 67%;
+    height: 50px;
+    padding-left: 22px;
+    margin-left: 70px;
+    /* margin-top: 12px; */
+    box-sizing: border-box;
+    font-size: 17px;
+    outline: none;
+    border-radius: 10px;
+    /* border: none; */
+    border: 2px solid black;
+    /* display: none; */
+  }
+
+.h-food{
+    width: 90%;
+    text-align: center;
+}
+
+.search-bar{
+    width: 10%;
+}
+
+.search-bar img{
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+    width: 30px;
+}
+
+.main-food{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* padding: 10px; */
+}
+
+.main-food::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+
+.food-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 97%;
+    height: 100vh;
+    padding-top: 10px;
+    align-content: flex-start;
+    /* overflow: scroll; */
+}
+.food{
+    width: 230px;
+    height: 285px;
+}
+
+
+.food img{
+    width: 230px;
+    height: 200px;
+}
+
+.test{
+    width: 230px;
+    height: 220px;
+}
+
+/* cart */
+
+.cart{
+    width: 35%;
+    height: 100vh;
+    background-color: white;
+}
+
+.h-cart{
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    justify-content: center;
+}
+.main-cart{
+    width: 100%;
+    height: 87vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.main-cart::-webkit-scrollbar {
+    width: 20px;
+  }
+
+.h-cart-text{
+    display: flex;
+    text-align: center;
+    height: 100vh;
+    padding-top: 7px;
+    /* widt */
+}
+
+.circle{
+    margin-left: 7px;
+    background: url('/image/Ellipse.svg') 3px 0 no-repeat;
+    width: 30px;
+    height: 30vh;
+    text-align: center;
+    color: white;
+}
+
+.no-order{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-order h2{
+    margin: 0;
+}
+
+.validation{
+    width: 90%;
+    height: 1000vh;
+    margin-top: 2px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item{
+    width: 100%;
+    height: 14vh;
+    display: flex;    
+    margin-top: 20px;
+}
+
+.chose{
+    display: none;
+    position:relative;
+    width: 230px; 
+    height: 186px;
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 8px 8px 0px 0px;
+    bottom: 196px;
+    background: rgb(0, 0, 0, 0.3) url("image/tick\ \(1\).svg") no-repeat 50% 50%;
+}
+
+.chose2{
+    position: absolute;
+    bottom: 260px;
+}
+
+.cart-menu{
+    border-radius: 0px 0px 14px 14px;
+    width: 90px;
+    height: 90px;
+}
+
+.cart-menu-2{
+    margin-left: 20px;
+}
+
+.cart-menu-3{
+    margin-left: 80px;
+    padding-top: 30px;
+}
+
+.menu-title-cart{
+    margin-top: 10px;
+    margin-bottom: 19px;
+}
+
+.icon-add-more{
+    display: flex;
+
+}
+
+.plus{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #82DE3A;
+    background: url('image/+.svg') 50% 50% no-repeat;
+    cursor: pointer;
+
+}
+
+.minus{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #82DE3A;
+    background: url('image/-.svg') 50% 50% no-repeat;
+    cursor: pointer;
+
+}
+
+.number{
+    width: 24px;
+    height: 24px;
+    border: 1px solid #82DE3A;
+    font-size: 20px;
+    text-align: center;
+}
+
+.total{
+    width: 71.9vh;
+    height: 36vh;
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    
+}
+
+.total-text{
+    padding-left: 20px;
+    display: flex;
+}
+
+.but-pop1{
+    width: 100%;
+    /* height: 20vh; */
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.butpink1{
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #F24F8A;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.butblue1{
+    width: 400px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #57CAD5;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.displayn{
+    display: none;
+}
+
+/* pop up */
+
+.pop-up .pop-overlay{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.pop-up{
+    display: none;
+}
+
+.pop-up .content-pop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.head-pop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.receipt{
+    margin-top: 22px;
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.main-pop{
+    /* background: yellow; */
+    margin-top: 20px;
+    width: 100%;
+    height: 25vh;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+.main-pop::-webkit-scrollbar {
+    width: 20px;
+  }
+
+.item-list{
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.total-pop{
+    margin-top: 20px;
+    text-align: end;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.but-pop{
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.butpink{
+    width: 400px;
+    height: 45px;
+    font-size: 17px;
+    background-color: #F24F8A;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.butblue{
+    width: 400px;
+    height: 45px;
+    font-size: 17px;
+    background-color: #57CAD5;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-weight: bold;
+
+}
+
+/* pop up 2 */
+.pop-up2{
+    display: none;
+}
+
+.pop-up2 .pop-overlay{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.pop-up2 .content-pop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}

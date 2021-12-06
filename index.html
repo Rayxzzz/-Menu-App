@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- pop up -->
+    <div class="pop-up" id="pop-1">
+        <div class="pop-overlay" onclick="checkout('off')"></div>
+        <div class="content-pop">
+            <div class="head-pop">
+                <div class="checkout">
+                    <h2>Checkout</h2>
+                    <p>Cashier: Pevita Pearce</p>
+                </div>
+                <div class="receipt">Receipt no: #009838380r8720</div>
+            </div>
+            <div class="main-pop">
+                <!-- <div class="item-list">
+                    <div>coffee Latte 1x</div>
+                    <div>Rp 15.000</div>
+                </div>
+                <div class="item-list">
+                    <div>coffee Latte 1x</div>
+                    <div>Rp 15.000</div>
+                </div>
+                <div class="item-list">
+                    <div>coffee Latte 1x</div>
+                    <div>Rp 15.000</div>
+                </div> -->
+
+            </div>
+            <div class="item-list">
+                <div>ppn 10%</div>
+                <div id="ppn">Rp 15.000</div>
+            </div>
+            <div class="total-pop">Total: Rp.1000000</div>
+            <div>Payment:Cash</div>
+            <div class="but-pop">
+                <button class="butpink">Print</button>
+                <p style="margin: 0;">Or</p>
+                <button class="butblue">Send Email</button>
+            </div>
+        </div>
+    </div>
+    <!-- pop up add item -->
+    <div class="pop-up2">
+        <div class="pop-overlay" onclick="addItems('off')"></div>
+        <div class="content-pop">
+            <h2>Add item</h2>
+            <div class="container-input">
+                <div class="inputAdd">
+                    <h2>Name</h2>
+                    <input type="text" class="input2" id="name-pop">
+                </div>
+                <div class="inputAdd">
+                    <h2>Image</h2>
+                    <input type="text" class="input2" id="image-pop">
+                </div>
+                <div class="inputAdd">
+                    <h2>Price</h2>
+                    <input type="text" class="input2" id="price-pop">
+                </div>
+                <div class="inputAdd">
+                    <h2>category</h2>
+                    <input type="text" class="input2" id="cata-pop">
+                </div>
+            </div>
+            <div class="button-input">
+                <button class="redbut" onclick="addItems('off')">Cancel</button>
+                <button class="bluebut" onclick="menuAddNew()">Add</button>
+            </div>
+        </div>
+    </div>
+    <!-- main content -->
+    <div class="container">
+    <!-- navbar -->
+    <nav>
+        <div class="dashboard">
+            <img src="/image/menu (1).svg" alt="">
+        </div>
+        <div class="icon-nav">
+            <ul class="nav-icon">
+                <li><img src="/image/fork.svg" alt="" onclick="offsearch()"></li>
+                <li><img src="/image/clipboard.svg" alt=""></li>
+                <li><img src="/image/add.svg" alt="" class="additems" onclick="addItems('on')"></li>     
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Food items -->
+    <div class="food-items">
+    <!-- header food items-->
+    <header class="header-food">
+        <div class="h-food">
+            <input type="text" id="fname" name="fname" class="input" onkeyup="dataSearch()">
+            <h1>Food Items</h1>
+        </div>
+        <div class="search-bar">
+            <img src="/image/magnifying-glass.svg" alt="" onclick="search()">
+        </div>
+    </header>
+    <!-- main food items -->
+    <main class="main-food">
+        <div class="food-c" id="main-food">
+        <!-- <div class="food">
+            <div class="test">
+            <img src="image/menu/cappucino.png"  alt="" style="cursor: pointer;">
+            <div class="chose"></div>
+            </div>
+            <p class="m">Expresso</p>
+            <h3 class="m">Rp 10.000</h3>   
+        </div> -->
+        
+        
+        <!-- <div class="food">
+            <img src="image/menu/bear.svg"  alt="">
+            <p class="m">Expresso</p>
+            <h3 class="m">Rp 10.000</h3>
+        </div>
+        <div class="food">
+            <img src="image/menu/bear.svg"  alt="">
+            <p class="m">Expresso</p>
+            <h3 class="m">Rp 10.000</h3>
+        </div>
+        <div class="food">
+            <img src="image/menu/bear.svg"  alt="">
+            <p class="m">Expresso</p>
+            <h3 class="m">Rp 10.000</h3>
+        </div> -->
+        </div>
+    </main>
+    </div>
+    <!-- cart -->
+    <div class="cart">
+    <!-- head cart -->
+    <header class="h-cart">
+        <div class="h-cart-text">
+            <h3>Cart</h3>
+            <h3 class="circle">0</h3>
+        </div>
+    </header>
+    <!-- main cart -->
+    <main class="main-cart">
+        <!-- no order -->
+
+        <div class="no-order">
+            <img src="/image/food-and-restaurant.svg" alt="">
+            <h2>Your cart is empty</h2>
+            <h4 style="color: #CECECE;">Please add some items from the menu</h4>
+        </div>
+        <!-- validation -->
+        <div class="validation">
+            <!-- <div class="cart-item">
+                <img src="/image/menu/blackforest.svg" alt="" class="cart-menu">
+                <div class="cart-menu-2">
+                    <h4 class="menu-title-cart">blackforest</h4>
+                    <div class="icon-add-more">
+                    <div class="minus"></div>
+                    <div class="number">1</div>
+                    <div class="plus"></div>
+                    </div>
+                </div>
+                <h4 class="cart-menu-3">1500000</h4>
+            </div> -->
+            
+        </div>
+        <div class="total displayn">
+           <div class="total-text">
+               <div>
+                   <h2>Total</h2>
+                   <p>*belum termasuk ppn</p>
+               </div>
+               <div>
+                   <h2 style="padding-left: 100px;" id="total-price">14000000</h2>
+               </div>
+           </div>
+           <div class="but-pop1">
+           <button class="butpink1" onclick="checkout('on')">Checkout</button>
+           <button class="butblue1" onclick="window.location.reload()">Cancel</button>
+            </div>
+        </div>
+    </main>
+    
+    </div>
+    </div>
+    
+
+    <!-- <script type="text/javascript" src="menu.js"></script> -->
+    <script type="text/javascript" src="index2.js"></script>
+</body>
+</html>

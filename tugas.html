@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 100vh;
+        /* background-color: aqua; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .user{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 15%;
+        height: 50vh;
+        border-radius: 15px;
+        border-style: groove;
+        overflow: hidden;
+        margin: 20px;
+    }
+    .user img{
+        width: 100%;
+        height: auto;
+    }
+    .user h3{
+        text-align: center;
+    }
+    .user p{
+        font-size: 15px;
+        text-align: center;
+
+    }
+</style>
+<body>
+    <button onclick="load()">Click For Data</button>
+    <div class="container" id="container">
+        <!-- <div class="user" >
+            <img src="https://media.istockphoto.com/vectors/flat-icon-check-vector-id496603666?k=20&m=496603666&s=170667a&w=0&h=QOfI-aqzv1dEamb2evpWUvKkukJwtH4YRF_Ugwksk6Y=" alt="">
+            <p>hai</p>    
+            <p>halo</p>    
+        </div>
+        <div class="user" >
+            <img src="https://media.istockphoto.com/vectors/flat-icon-check-vector-id496603666?k=20&m=496603666&s=170667a&w=0&h=QOfI-aqzv1dEamb2evpWUvKkukJwtH4YRF_Ugwksk6Y=" alt="">
+            <p>hai</p>    
+            <p>halo</p>    
+        </div> -->
+    </div>
+
+    <script type="text/javascript">
+    let users 
+    const data = () => {
+        return fetch('./menu.json')
+            .then(res => res.json())
+            .then(user => users = user )      
+    }
+    const nameData = async() => {
+        try {
+    
+            const hai = await data()
+            const map = hai.map(z => z.name)
+            console.log(map)
+    
+        } catch (error) {
+            console.error("function error")
+        }
+        
+    }
+    users = nameData()
+
+    const load = () =>{
+        users.map((item)=> {
+        document.getElementById("container").innerHTML += `<div class="user" >
+            <img src=${item.avatar} alt="">
+            <h3>${item.name}</h3>    
+            <p>${item.createdAt}</p>    
+        </div>`
+    })
+}
+
+    </script>
+</body>
+</html>
