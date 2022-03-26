@@ -14,7 +14,7 @@
 
 ## Demonstration
 
-Demo : https://bit.ly/ZwalletSite
+Demo : https://bit.ly/CashierApp3
 
 * if you want add menu please fill photo section with link
 
@@ -34,7 +34,7 @@ Check Out
 ![snippet1](./image/snippet1.png)
 
 
-![snippet1](./image/snippet2.png)
+![snippet1](./image/snippe2.png)
 
 
 ![snippet1](./image/snippet3.png)
