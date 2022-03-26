@@ -27,6 +27,8 @@ Select Menu
 
 Check Out
 
+Search Menu
+
 
 ## Snippets
 
