@@ -7,7 +7,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/pilarhh/blanja-app.git
+   git clone https://github.com/Rayxzzz/Menu-App.git
    ```
 
 2. Run with Live Server
