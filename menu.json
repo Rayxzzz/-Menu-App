@@ -12,12 +12,6 @@
      "id": "2"
     },
     {
-     "photo": "cappucino.png",
-     "name": "Cappucino",
-     "price": "5.000",
-     "id": "3"
-    },
-    {
      "photo": "redvelvet.svg",
      "name": "Red Velvet Latte",
      "price": "33.000",
@@ -52,5 +46,11 @@
      "name": "Wiener Schnitzel",
      "price": "69.000",
      "id": "9"
-    }
-   ]
+    },
+    {
+        "photo": "cappucino.png",
+        "name": "Cappucino",
+        "price": "5.000",
+        "id": "3"
+       }
+]
